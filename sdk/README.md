@@ -280,4 +280,4 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
 
 - Documentation: [docs.ktzchenweb3.io](https://docs.ktzchenweb3.io)
 - Discord: [Join Community](https://discord.gg/ktzchenweb3)
-- Email: sdk-support@ktzchenweb3.io
+- Email: support@ktzchenweb3.io
