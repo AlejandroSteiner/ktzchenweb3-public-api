@@ -69,7 +69,7 @@
   <text x="380" y="175" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" fill="#94a3b8">Multi-Chain Blockchain API Platform</text>
   
   <!-- Features -->
-  <text x="380" y="220" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="url(#accentBanner)">Ethereum  ·  Polygon  ·  BSC  ·  Arbitrum  ·  Optimism  ·  Avalanche  ·  +50 Networks</text>
+  <text x="380" y="220" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="url(#accentBanner)">Ethereum  ï¿½  Polygon  ï¿½  BSC  ï¿½  Arbitrum  ï¿½  Optimism  ï¿½  Avalanche  ï¿½  +50 Networks</text>
   
   <!-- Version badge -->
   <rect x="380" y="240" width="60" height="24" rx="12" fill="url(#textGradient)" opacity="0.2"/>

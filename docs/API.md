@@ -515,12 +515,12 @@ No authentication required.
 
 Rate limits are applied per API key:
 
-| Plan | Requests/Day | Requests/Minute |
-|------|-------------|-----------------|
-| Free | 1,000 | 10 |
-| Starter | 50,000 | 100 |
-| Pro | 500,000 | 1,000 |
-| Enterprise | Unlimited | Custom |
+| Plan | API Keys | Requests/Day | Rate Limit |
+|------|----------|-------------|------------|
+| Core (Free) | 5 | 120,000 | 10 req/sec |
+| Developer ($24/mo) | 10 | 250,000 | 15 req/sec |
+| Team ($110/mo) | 50 | 750,000 | 30 req/sec |
+| Enterprise | Custom | Custom | Custom |
 
 Rate limit headers:
 
