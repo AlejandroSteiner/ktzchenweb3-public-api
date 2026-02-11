@@ -361,7 +361,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">
   <img src="assets/logo.png" alt="KtzchenWeb3" width="80">
   <br><br>
-  <b>Built with ❤️ by the KtzchenWeb3 Team</b>
+  <b>Built by Ktzchen Labs</b>
   <br>
   <a href="https://ktzchenweb3.io">ktzchenweb3.io</a>
 </p>
