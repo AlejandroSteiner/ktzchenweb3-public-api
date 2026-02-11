@@ -1,0 +1,317 @@
+{
+  "info": {
+    "_postman_id": "ktzchenweb3-api-collection",
+    "name": "KtzchenWeb3 API",
+    "description": "Official Postman collection for the KtzchenWeb3 blockchain API platform.\n\n## Getting Started\n\n1. Set your API key in the collection variables\n2. Select the environment (Production/Development)\n3. Start making requests!\n\n## Support\n\n- Documentation: https://docs.ktzchenweb3.io\n- Discord: https://discord.gg/ktzchenweb3\n- Email: support@ktzchenweb3.io",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://ktzchenweb3.io/api",
+      "type": "string"
+    },
+    {
+      "key": "api_key",
+      "value": "your_api_key_here",
+      "type": "string"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "value",
+        "value": "{{api_key}}",
+        "type": "string"
+      },
+      {
+        "key": "key",
+        "value": "X-API-Key",
+        "type": "string"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "Gas Fees",
+      "item": [
+        {
+          "name": "Get Gas Fees - Ethereum",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/ethereum_mainnet/gas-fees/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "ethereum_mainnet", "gas-fees", ""]
+            },
+            "description": "Get current gas prices for Ethereum mainnet"
+          }
+        },
+        {
+          "name": "Get Gas Fees - Polygon",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/polygon/gas-fees/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "polygon", "gas-fees", ""]
+            },
+            "description": "Get current gas prices for Polygon"
+          }
+        },
+        {
+          "name": "Get Gas Fees - Arbitrum",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/arbitrum/gas-fees/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "arbitrum", "gas-fees", ""]
+            },
+            "description": "Get current gas prices for Arbitrum"
+          }
+        },
+        {
+          "name": "Get Gas Fees - BSC",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/bsc/gas-fees/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "bsc", "gas-fees", ""]
+            },
+            "description": "Get current gas prices for BNB Smart Chain"
+          }
+        }
+      ],
+      "description": "Gas fees endpoints for all supported networks"
+    },
+    {
+      "name": "Blockchain Explorer",
+      "item": [
+        {
+          "name": "Get Address Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/ethereum_mainnet/address/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "ethereum_mainnet", "address", "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045", ""]
+            },
+            "description": "Get balance and transaction info for an address"
+          }
+        },
+        {
+          "name": "Get Transaction Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/ethereum_mainnet/tx/{{tx_hash}}/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "ethereum_mainnet", "tx", "{{tx_hash}}", ""],
+              "variable": [
+                {
+                  "key": "tx_hash",
+                  "value": "0x..."
+                }
+              ]
+            },
+            "description": "Get detailed information about a transaction"
+          }
+        },
+        {
+          "name": "Get Block Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/ethereum_mainnet/block/latest/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "ethereum_mainnet", "block", "latest", ""]
+            },
+            "description": "Get information about a block"
+          }
+        },
+        {
+          "name": "Get Token Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/ethereum_mainnet/token/0xdAC17F958D2ee523a2206206994597C13D831ec7/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "ethereum_mainnet", "token", "0xdAC17F958D2ee523a2206206994597C13D831ec7", ""]
+            },
+            "description": "Get ERC-20 token information (USDT example)"
+          }
+        }
+      ],
+      "description": "Blockchain explorer endpoints"
+    },
+    {
+      "name": "Node Status",
+      "item": [
+        {
+          "name": "Get Node Status - Ethereum",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/ethereum_mainnet/node/status/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "ethereum_mainnet", "node", "status", ""]
+            },
+            "description": "Get node status for Ethereum mainnet"
+          }
+        },
+        {
+          "name": "Get Node Status - Polygon",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/v3/polygon/node/status/",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "polygon", "node", "status", ""]
+            },
+            "description": "Get node status for Polygon"
+          }
+        }
+      ],
+      "description": "Node status and health endpoints"
+    },
+    {
+      "name": "Contract Audit",
+      "item": [
+        {
+          "name": "Get Audit Plans",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/contract-audit/plans/",
+              "host": ["{{base_url}}"],
+              "path": ["contract-audit", "plans", ""]
+            },
+            "description": "Get available audit plans and pricing"
+          }
+        },
+        {
+          "name": "Request Audit",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"contract_address\": \"0x742d35Cc6634C0532925a3b844Bc9e7595f8dB21\",\n    \"network\": \"ethereum_mainnet\",\n    \"contact_email\": \"developer@example.com\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/contract-audit/request/",
+              "host": ["{{base_url}}"],
+              "path": ["contract-audit", "request", ""]
+            },
+            "description": "Submit a contract for security audit"
+          }
+        },
+        {
+          "name": "Get Audit Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/contract-audit/status/{{audit_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["contract-audit", "status", "{{audit_id}}", ""],
+              "variable": [
+                {
+                  "key": "audit_id",
+                  "value": "your-audit-id"
+                }
+              ]
+            },
+            "description": "Check the status of an audit request"
+          }
+        }
+      ],
+      "description": "Smart contract audit endpoints"
+    },
+    {
+      "name": "Transaction Tracing",
+      "item": [
+        {
+          "name": "Trace Transaction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"tx_hash\": \"0x...\",\n    \"network\": \"ethereum_mainnet\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/trace/transaction/",
+              "host": ["{{base_url}}"],
+              "path": ["trace", "transaction", ""]
+            },
+            "description": "Get detailed execution trace of a transaction"
+          }
+        }
+      ],
+      "description": "Transaction tracing and debugging endpoints"
+    },
+    {
+      "name": "Health & Metrics",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/health/",
+              "host": ["{{base_url}}"],
+              "path": ["health", ""]
+            },
+            "description": "Check API health (no authentication required)"
+          }
+        },
+        {
+          "name": "Public System Metrics",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/public/system/metrics/",
+              "host": ["{{base_url}}"],
+              "path": ["public", "system", "metrics", ""]
+            },
+            "description": "Get public system metrics (no authentication required)"
+          }
+        }
+      ],
+      "description": "Health check and metrics endpoints"
+    }
+  ]
+}

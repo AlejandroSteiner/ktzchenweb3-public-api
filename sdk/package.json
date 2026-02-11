@@ -1,0 +1,59 @@
+{
+  "name": "@ktzchenweb3/sdk",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript SDK for the KtzchenWeb3 blockchain API platform",
+  "main": "ktzchenweb3.js",
+  "module": "ktzchenweb3.js",
+  "types": "ktzchenweb3.d.ts",
+  "exports": {
+    ".": {
+      "import": "./ktzchenweb3.js",
+      "require": "./ktzchenweb3.js",
+      "types": "./ktzchenweb3.d.ts"
+    }
+  },
+  "files": [
+    "ktzchenweb3.js",
+    "ktzchenweb3.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktzchenweb3/ktzchenweb3-public-api.git"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "arbitrum",
+    "bsc",
+    "api",
+    "sdk",
+    "gas-fees",
+    "smart-contracts",
+    "audit",
+    "defi",
+    "nft",
+    "crypto"
+  ],
+  "author": "KtzchenWeb3 <sdk@ktzchenweb3.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ktzchenweb3/ktzchenweb3-public-api/issues"
+  },
+  "homepage": "https://ktzchenweb3.io",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  }
+}

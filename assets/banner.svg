@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowBanner">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="50" x2="1200" y2="50" stroke="#818cf8" stroke-width="1"/>
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#818cf8" stroke-width="1"/>
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#818cf8" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#818cf8" stroke-width="1"/>
+    <line x1="0" y1="250" x2="1200" y2="250" stroke="#818cf8" stroke-width="1"/>
+  </g>
+  
+  <!-- Decorative hexagons -->
+  <g transform="translate(100, 150)" opacity="0.3" filter="url(#glowBanner)">
+    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="url(#textGradient)" stroke-width="2"/>
+  </g>
+  <g transform="translate(1100, 150)" opacity="0.3" filter="url(#glowBanner)">
+    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="url(#textGradient)" stroke-width="2"/>
+  </g>
+  
+  <!-- Logo hexagon -->
+  <g transform="translate(250, 150)" filter="url(#glowBanner)">
+    <polygon points="0,-50 43,-25 43,25 0,50 -43,25 -43,-25" fill="none" stroke="url(#textGradient)" stroke-width="3"/>
+    <circle cx="0" cy="-50" r="6" fill="url(#accentBanner)"/>
+    <circle cx="43" cy="-25" r="6" fill="url(#accentBanner)"/>
+    <circle cx="43" cy="25" r="6" fill="url(#accentBanner)"/>
+    <circle cx="0" cy="50" r="6" fill="url(#accentBanner)"/>
+    <circle cx="-43" cy="25" r="6" fill="url(#accentBanner)"/>
+    <circle cx="-43" cy="-25" r="6" fill="url(#accentBanner)"/>
+    <circle cx="0" cy="0" r="15" fill="url(#textGradient)"/>
+    <circle cx="0" cy="0" r="10" fill="#1e293b"/>
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="url(#accentBanner)" stroke-width="2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="43" y2="-25" stroke="url(#accentBanner)" stroke-width="2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="43" y2="25" stroke="url(#accentBanner)" stroke-width="2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="0" y2="50" stroke="url(#accentBanner)" stroke-width="2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-43" y2="25" stroke="url(#accentBanner)" stroke-width="2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-43" y2="-25" stroke="url(#accentBanner)" stroke-width="2" opacity="0.7"/>
+  </g>
+  
+  <!-- Main text -->
+  <text x="380" y="130" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="700" fill="url(#textGradient)">KtzchenWeb3</text>
+  
+  <!-- Subtitle -->
+  <text x="380" y="175" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" fill="#94a3b8">Multi-Chain Blockchain API Platform</text>
+  
+  <!-- Features -->
+  <text x="380" y="220" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="url(#accentBanner)">Ethereum  ·  Polygon  ·  BSC  ·  Arbitrum  ·  Optimism  ·  Avalanche  ·  +50 Networks</text>
+  
+  <!-- Version badge -->
+  <rect x="380" y="240" width="60" height="24" rx="12" fill="url(#textGradient)" opacity="0.2"/>
+  <text x="395" y="257" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="url(#textGradient)">v3.0</text>
+  
+  <rect x="450" y="240" width="100" height="24" rx="12" fill="url(#accentBanner)" opacity="0.2"/>
+  <text x="465" y="257" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="url(#accentBanner)">Production</text>
+</svg>
