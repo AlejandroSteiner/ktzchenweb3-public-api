@@ -340,7 +340,7 @@ X-RateLimit-Reset: 1707656400
 ## Support
 
 - **Documentation**: [ktzchenweb3.io/docs](https://ktzchenweb3.io/docs)
-- **Discord**: [Join our community](https://discord.gg/ktzchenweb3)
+- **Discord**: [Join our community](https://discord.gg/gxVJdV4D)
 - **Twitter**: [@ktzchenweb3](https://twitter.com/ktzchenweb3)
 - **Email**: support@ktzchenweb3.io
 
