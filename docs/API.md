@@ -552,6 +552,6 @@ Subscribe to real-time events:
 
 ## Support
 
-- Email: api-support@ktzchenweb3.io
+- Email: support@ktzchenweb3.io
 - Discord: [Join Community](https://discord.gg/ktzchenweb3)
 - Documentation: [docs.ktzchenweb3.io](https://docs.ktzchenweb3.io)
